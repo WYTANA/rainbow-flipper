@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap'); 
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -9,11 +11,20 @@ body {
     display: flex;
     flex-direction: column;
     background-color: black;
+    font-size: 24px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Fugaz One', cursive; 
 }
 
 .one {
     background-color: red;
     height: 15vh;
+    
 }
 .two {
     background-color: orange;
@@ -41,21 +52,28 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 5px;
+    margin-top: 8px;
 }
 
 button::after {
     content: "Flip the Rainbow!";
+    background: none;
+    border: none;
+    text-decoration: none;
 }
 
 button:hover::after {
     content: "Have fun!";
+    background: none;
+    border: none;
+    text-decoration: none;
 }
 
 button {
     width: 50%;
     background: none;
     border: none;
+    text-decoration: none;
     border-radius: 5px;
     background-color: rgb(140, 140, 140);
     padding: 10px;
