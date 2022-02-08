@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+
+.one {
+    background-color: red;
+    height: 15vh;
+}
+.two {
+    background-color: orange;
+    height: 15vh;
+}
+.three {
+    background-color: yellow;
+    height: 15vh;
+}
+.four {
+    background-color: green;
+    height: 15vh;
+}
+.five {
+    background-color: blue;
+    height: 15vh;
+}
+.six {
+    background-color: purple;
+    height: 15vh; 
+
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+
+button::after {
+    content: "Flip the Rainbow!";
+}
+
+button:hover::after {
+    content: "Have fun!";
+}
+
+button {
+    width: 50%;
+    background: none;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(140, 140, 140);
+    padding: 10px;
+    cursor: pointer;
+}
